@@ -1,0 +1,5 @@
+2017-04-28 04:48:01 UTC [43-1] LOG:  database system was shut down at 2017-04-27 07:45:52 UTC
+2017-04-28 04:48:01 UTC [43-2] LOG:  MultiXact member wraparound protections are now enabled
+2017-04-28 04:48:01 UTC [41-3] LOG:  database system is ready to accept connections
+2017-04-28 04:48:01 UTC [47-1] LOG:  autovacuum launcher started
+2017-04-28 04:48:01 UTC [49-1] [unknown]@[unknown] LOG:  incomplete startup packet
