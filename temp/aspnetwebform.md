@@ -148,6 +148,7 @@ asp.net控件继承自System。Web。UI。WebControls，每种控件对应一个
 4. 构建asp.net网站
     1. master page： 
         ContentPlaceHolder: 为子页面预留
+        
         <%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
         <!DOCTYPE html>
         <html>
@@ -167,6 +168,7 @@ asp.net控件继承自System。Web。UI。WebControls，每种控件对应一个
     2. SiteMap: 站点导航控件
         MasterPageFile：制定masterpage文件
         ContentPlaceHolderID： 关联masterpage预留占位符
+        
         <siteMapNode url="~/Default.aspx" title="Home"  description="the home page" />
         <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Default" %>
         <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
@@ -179,6 +181,7 @@ asp.net控件继承自System。Web。UI。WebControls，每种控件对应一个
         </asp:Content>
     3. GridView: 表格控件
     4. Wiazrd： 向导安装控件
+
         <asp:Wizard ID="Wizard1" runat="server" Width="669px" OnFinishButtonClick="Wizard1_FinishButtonClick">
             <WizardSteps>
                 <asp:WizardStep ID="step1" runat="server" Title="Pick Your Model">
@@ -202,6 +205,7 @@ asp.net控件继承自System。Web。UI。WebControls，每种控件对应一个
                 </asp:WizardStep>
             </WizardSteps>
         </asp:Wizard>
+
         //完成按钮单击事件
         protected void Wizard1_FinishButtonClick(object sender, WizardNavigationEventArgs e)
         {
